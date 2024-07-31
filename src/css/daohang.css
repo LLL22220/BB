@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner-Container {
+  
+  }
+.vid {
+        width: 100%;
+        height: 100%;
+      }
+.vidContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+        /* overflow: hidden; */
+      }
+.navContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+}
+.first-nav {
+  display: flex;
+  box-sizing: border-box;
+  /* width: 554px; */
+  /* width: 30%; */
+  margin-left: 20px;
+  /* padding-left: 30px; */
+  /* background-color: red; */
+}
+.f-n {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 30%);
+  margin-left: 20px;
+}
+.f-n li {
+  margin-right: 12px;
+  cursor: pointer;
+  list-style-type: none;
+  text-align: center;
+  /* min-width: 40px; */
+    /* flex: 1; */
+}
+
+ /* .ico {
+  font-size: 18px;
+   color: skyblue; 
+}  */
+
+.searchInput {
+  display: flex;
+  position: relative;
+  left: -20px;
+  width: 500px;
+  height: 40px;
+  /* background-color: green; */
+}
+.searchInput input {
+  height: 100%;
+  width: 90%;
+  outline: none;
+  padding: 0 38px 0 16px;
+  border: 1px solid hsla(0, 0%, 100%, 0);
+  border-radius: 4px 0 0 4px;
+  /* background-color: #fff; */
+}
+
+.searchInput button {
+  width: 10%;
+  height: 105%;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid hsla(0, 0%, 100%, 0);
+  text-align: center;
+}
+
+.userSection {
+  display: flex;
+  margin-right: 20px;
+  /* width: 500px; */
+  /* width: 33.3%; */
+  height: 36px;
+  /* justify-content: center; */
+  /* background-color: #bfa; */
+}
+
+.user-left {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  /* background-color: skyblue; */
+}
+
+.carmer {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.user-left a {
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 30%);
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+.user-right {
+  display: flex;
+
+}
+.userDetail {
+  width: 100px ;
+  height: 100%;
+  background-color: #fb7299;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 36px;
+  margin-left: 20px;
+}
+.biliLogo {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    cursor: pointer;
+  }
+  .menu-Container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100px;
+
+  }
+  .tubiao-Container{
+    display: flex;
+
+    margin-left: 5%;
+  }
+
+  .tubiao{
+    cursor: pointer;
+    width: 50px;
+    height: 80px;
+    left: 200px;
+    margin: 10px;
+  }
+  .l-2 {
+    position: relative;
+    display: flex;
+    /* width: 1012px; */
+    height: 68px;
+    /* background-color: pink; */
+    top: -5px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    box-sizing: border-box;
+  }
+  
