@@ -7,7 +7,7 @@
 
           <div class="first-nav">
             <ul class="f-n">
-              <li>首页</li>
+              <li @click="refresh()">首页</li>
               <li>番剧</li>
               <li>直播</li>
               <li>游戏中心</li>
@@ -21,7 +21,7 @@
 
           <!-- 搜索框 -->
           <div class="searchInput">
-            <input type="text"  placeholder="搜索" />
+            <input type="text" v-model="sousuo" placeholder="搜索" />
             <button>搜索</button>
           </div>
           <!-- 用户栏 -->
@@ -106,59 +106,104 @@
     <!-- 第二部分 -->
     <div class="second-section">
       <!-- 轮播部分 -->
-       <div class="autoshow">
-      <div class="show">
-          <div class="item"><img src="../img/v008endr.png" /></div>
-          <div class="item"><img src="../img/QQ图片20240730115129.jpg" /></div>
-          <div class="item"><img src="../img/v008endr.png" /></div>
-          <div class="item"><img src="../img/v008endr.png" /></div>
-          <div class="item"><img src="../img/v008endr.png" /></div>  
-      </div>    
-      <div class="button">
-        <span class="active"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="lunbo">
+			<div class="content">
+			<ul id="item">
+				<li class="item" >
+					<a href="#"><img src="../img/dndxw7tq.png" ></a>
+				</li>
+				<li class="item">
+					<a href="#"><img src="../img/ghj8a1yy.png" ></a>
+				</li>
+				<li class="item">
+					<a href="#"><img src="../img/hd9zgojy.png" ></a>
+				</li>
+				<li class="item">
+					<a href="#"><img src="../img/ke000nxq.png" ></a>
+				</li>
+				<li class="item">
+					<a href="#"><img src="../img/skefd75n.png" ></a>
+				</li>
+			</ul>
+			<div id="btn-left">《</div>
+			<div id="btn-right">》</div>
+			<ul id="circle">
+				
+				<li class="circle"></li>
+				<li class="circle"></li>
+				<li class="circle"></li>
+				<li class="circle"></li>
+				<li class="circle"></li>
+			</ul>
+			</div>
+		</div>
+
+    <div class="tuijian">
+      <div class="item1"><img src="../img/dndxw7tq.png" alt=""/>
+        <p>努力的尽头，是躺平！！</p>
+        <div class="up">钱包CB·7-30</div>
       </div>
-    </div> 
+      <div class="item1"><img src="../img/ghj8a1yy.png" alt=""/>
+        <p>《崩坏：星穹铁道》走近星穹——「三月七•巡猎：星穹列车第一神剑」</p>
+        <div class="up">崩坏星穹铁道·22小时前</div>
+      </div>
+      <div class="item1"><img src="../img/hd9zgojy.png" alt=""/>
+        <p>每天剪辑一小时，在家接单赚钱养活自己！！！</p>
+        <div class="up">中职通</div>
+      </div>
+      <div class="item1"><img src="../img/ke000nxq.png" alt=""/>
+        <p>9.5元一只烤鸭和400元一只烤鸭，究竟有什么区别？</p>
+        <div class="up">穿毛裤的小拉泽·7-9</div>
+      </div>
+      <div class="item1"><img src="../img/skefd75n.png" alt=""/>
+        <p>被连体上嘴脸，0/5卧薪尝胆，最后1v5反上嘴脸！</p>
+        <div class="up">古月酱cc·7-6</div>
+      </div>
+      <div class="item1"><img src="../img/zd0arrnf.png" alt=""/>
+        <p>上海第一烧鸟有多好吃？小伙把所有串都点一遍直呼过瘾！</p>
+        <div class="up">哇塞几张·7-30</div>
+      </div>
+
+    </div>
     
     </div>
     
       
    <button @click="run()">检测</button>
+   <div id="ceshi" style="background: red;">
+    asdsadasdasd
+   </div>
   </div>
 </template>
 <script>
-let left = 0;
-let timer;
-function run(){
-a = document.getElementsByClassName('show')
-a.style.marginLeft + 'px';
-left -= 10;
-timer = setTimeout(run,10);
-}
-
-
-
-import "@/css/daohang.css"
+import '@/css/daohang.css'
+import  '@/js/lunbo';
 export default{
 data(){
     return{
-        
+      sousuo:'',
     }
 },
+components:{
+  
+},
 methods:{
-move(){
-// let a = document.getElementById('show')
-// console.log(a);
-// let b = a.style.transform
-// b = 'translateX(-100%)'
-// console.log(b);
+  refresh(){
+    location.reload();
+  },
+  run(){
+  let a = document.getElementById('ceshi').style
+   console.log(a);
+  }
 
 }
-   
 }
-}
+
 </script>
-
+<style>
+#ceshi{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+</style>
